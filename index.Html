@@ -3,39 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal de Apoio ao Estudante</title>
+<title>Diga Não à Violência Contra a Mulher</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3em;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2em;
+}
+
+nav{
+    background:#4A148C;
+    display:flex;
+    justify-content:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#FFD54F;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#6A1B9A;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    background:#8E24AA;
+    color:white;
+    padding:15px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#6A1B9A;
+}
+
+footer{
+    background:#4A148C;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 
 </head>
 <body>
 
 <header>
-<h1>Portal de Apoio ao Estudante</h1>
-
-<nav>
-<a href="index.html">Início</a>
-<a href="escuta.html">Portal de Escuta</a>
-<a href="quiz.html">Quiz</a>
-<a href="referencias.html">Referências</a>
-</nav>
-
+<h1>Diga Não à Violência Contra a Mulher</h1>
+<p>Respeito, igualdade e proteção salvam vidas.</p>
 </header>
 
-<main>
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#tipos">Tipos de Violência</a>
+<a href="#ajuda">Como Ajudar</a>
+</nav>
 
-<section>
+<section id="sobre">
 
-<h2>Violência Contra a Mulher</h2>
-
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900"
-alt="Mulher" class="banner">
-
+<div class="card">
+<h2>Sobre a Campanha</h2>
 <p>
-Bem-vindo(a)! Este portal foi criado para conscientizar sobre a violência contra a mulher, incentivar o respeito e mostrar onde procurar ajuda.
+A violência contra a mulher é uma grave violação dos direitos humanos.
+Todos podem contribuir para construir uma sociedade baseada no respeito,
+na igualdade e na proteção das vítimas.
 </p>
+</div>
 
-<h3>Tipos de violência</h3>
+<div class="card" id="tipos">
+<h2>Tipos de Violência</h2>
 
 <ul>
 <li>Violência Física</li>
@@ -45,436 +134,189 @@ Bem-vindo(a)! Este portal foi criado para conscientizar sobre a violência contr
 <li>Violência Sexual</li>
 </ul>
 
-<h3>Onde buscar ajuda?</h3>
+</div>
 
-<p>
-📞 Ligue 180<br>
-🚓 Polícia Militar - 190<br>
-🏫 Escola, professores e direção.<br>
-👨‍👩‍👧 Familiares ou adultos de confiança.
-</p>
+<div class="card" id="ajuda">
+<h2>Como Ajudar</h2>
+
+<ul>
+<li>Denuncie situações de violência.</li>
+<li>Ofereça apoio à vítima.</li>
+<li>Não incentive o silêncio.</li>
+<li>Compartilhe informações confiáveis.</li>
+<li>Promova o respeito e a igualdade.</li>
+</ul>
+
+<a class="botao" href="#">Saiba Mais</a>
+
+</div>
 
 </section>
 
-</main>
-
 <footer>
-
-<p>Projeto Escolar - Portal de Apoio ao Estudante</p>
-
-<button id="topo">⬆ Voltar ao topo</button>
-<button id="modo">🌙 Modo Escuro</button>
-
+<p>© 2026 - Campanha de Conscientização | Diga Não à Violência Contra a Mulher</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal de Escuta</title>
+<title>Diga Não à Violência Contra a Mulher</title>
 
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-<h1>Portal de Escuta</h1>
-
-<nav>
-<a href="index.html">Início</a>
-<a href="escuta.html">Portal de Escuta</a>
-<a href="quiz.html">Quiz</a>
-<a href="referencias.html">Referências</a>
-</nav>
-</header>
-
-<main>
-
-<h2>Conte seu desabafo</h2>
-
-<p>
-Este formulário é apenas uma simulação. Nenhuma informação será salva.
-</p>
-
-<form id="formulario">
-
-<textarea id="texto" rows="8"
-placeholder="Escreva seu desabafo aqui..."></textarea>
-
-<br><br>
-
-<button type="submit">Enviar</button>
-
-</form>
-
-<p id="mensagem"></p>
-
-<hr>
-
-<h2>Você não está sozinho(a)</h2>
-
-<ul>
-<li>💜 Procure um professor.</li>
-<li>💜 Converse com um familiar.</li>
-<li>💜 Fale com a direção da escola.</li>
-<li>💜 Busque um adulto de confiança.</li>
-<li>💜 Em caso de violência contra a mulher, disque 180.</li>
-</ul>
-
-<p><strong>Frase motivacional:</strong></p>
-
-<blockquote>
-"Você merece respeito, segurança e uma vida sem violência."
-</blockquote>
-
-</main>
-
-<footer>
-
-<p>Portal de Apoio ao Estudante</p>
-
-<button id="topo">⬆ Voltar ao topo</button>
-<button id="modo">🌙 Modo Escuro</button>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-
-<h1>Quiz</h1>
-
-<nav>
-<a href="index.html">Início</a>
-<a href="escuta.html">Portal de Escuta</a>
-<a href="quiz.html">Quiz</a>
-<a href="referencias.html">Referências</a>
-</nav>
-
-</header>
-
-<main>
-
-<h2>Teste seus conhecimentos</h2>
-
-<form id="quiz">
-
-<p><strong>1. A violência contra a mulher é crime?</strong></p>
-<input type="radio" name="q1" value="1"> Sim<br>
-<input type="radio" name="q1" value="0"> Não
-
-<p><strong>2. O número 180 serve para ajudar mulheres vítimas de violência?</strong></p>
-<input type="radio" name="q2" value="1"> Sim<br>
-<input type="radio" name="q2" value="0"> Não
-
-<p><strong>3. Humilhar uma mulher também é uma forma de violência?</strong></p>
-<input type="radio" name="q3" value="1"> Sim<br>
-<input type="radio" name="q3" value="0"> Não
-
-<p><strong>4. Devemos ignorar casos de violência?</strong></p>
-<input type="radio" name="q4" value="0"> Sim<br>
-<input type="radio" name="q4" value="1"> Não
-
-<p><strong>5. Toda mulher merece respeito?</strong></p>
-<input type="radio" name="q5" value="1"> Sim<br>
-<input type="radio" name="q5" value="0"> Não
-
-<br><br>
-
-<button type="button" onclick="corrigirQuiz()">
-Ver Resultado
-</button>
-
-</form>
-
-<h3 id="resultado"></h3>
-
-</main>
-
-<footer>
-
-<p>Portal de Apoio ao Estudante</p>
-
-<button id="topo">⬆ Voltar ao topo</button>
-<button id="modo">🌙 Modo Escuro</button>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Referências</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-
-<h1>Referências</h1>
-
-<nav>
-<a href="index.html">Início</a>
-<a href="escuta.html">Portal de Escuta</a>
-<a href="quiz.html">Quiz</a>
-<a href="referencias.html">Referências</a>
-</nav>
-
-</header>
-
-<main>
-
-<h2>Fontes da Pesquisa</h2>
-
-<p>As informações deste site foram obtidas em fontes confiáveis:</p>
-
-<ul>
-
-<li>
-<a href="https://www.gov.br/mulheres" target="_blank">
-Ministério das Mulheres
-</a>
-</li>
-
-<li>
-<a href="https://www.planalto.gov.br" target="_blank">
-Lei Maria da Penha
-</a>
-</li>
-
-<li>
-<a href="https://www.onumulheres.org.br" target="_blank">
-ONU Mulheres Brasil
-</a>
-</li>
-
-<li>
-<a href="https://www.gov.br/saude" target="_blank">
-Ministério da Saúde
-</a>
-</li>
-
-</ul>
-
-<h2>Mensagem Final</h2>
-
-<p>
-A violência contra a mulher é um problema que afeta toda a sociedade.
-Informar, acolher e denunciar são atitudes que podem salvar vidas.
-Se precisar de ajuda, procure um adulto de confiança ou ligue para o 180.
-</p>
-
-</main>
-
-<footer>
-
-<p>Portal de Apoio ao Estudante - 2026</p>
-
-<button id="topo">⬆ Voltar ao topo</button>
-<button id="modo">🌙 Modo Escuro</button>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-
+<style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family:Arial, sans-serif;
     background:#f5f5f5;
     color:#333;
-    line-height:1.6;
 }
 
 header{
-    background:#c2185b;
+    background:linear-gradient(135deg,#6A1B9A,#8E24AA);
     color:white;
-    padding:20px;
     text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3em;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2em;
 }
 
 nav{
-    margin-top:10px;
+    background:#4A148C;
+    display:flex;
+    justify-content:center;
+    padding:15px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 10px;
+    margin:0 20px;
     font-weight:bold;
 }
 
 nav a:hover{
-    text-decoration:underline;
+    color:#FFD54F;
 }
 
-main{
-    width:90%;
-    max-width:900px;
-    margin:20px auto;
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
 }
 
-.banner{
-    width:100%;
-    border-radius:10px;
-    margin:20px 0;
-}
-
-section, form{
+.card{
     background:white;
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-textarea{
-    width:100%;
-    padding:10px;
-    border-radius:8px;
-    margin-top:10px;
+.card h2{
+    color:#6A1B9A;
+    margin-bottom:15px;
 }
 
-button{
-    background:#c2185b;
+ul{
+    margin-left:20px;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    background:#8E24AA;
     color:white;
-    border:none;
-    padding:10px 15px;
+    padding:15px 25px;
     border-radius:8px;
-    cursor:pointer;
-    margin-top:10px;
+    text-decoration:none;
+    transition:.3s;
 }
 
-button:hover{
-    background:#880e4f;
+.botao:hover{
+    background:#6A1B9A;
 }
 
 footer{
-    background:#c2185b;
+    background:#4A148C;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:30px;
 }
+</style>
 
-.dark{
-    background:#222;
-    color:white;
-}
+</head>
+<body>
 
-.dark section,
-.dark form{
-    background:#333;
-    color:white;
-}
+<header>
+<h1>Diga Não à Violência Contra a Mulher</h1>
+<p>Respeito, igualdade e proteção salvam vidas.</p>
+</header>
 
-.dark header,
-.dark footer{
-    background:#111;
-}
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#tipos">Tipos de Violência</a>
+<a href="#ajuda">Como Ajudar</a>
+</nav>
 
-@media(max-width:600px){
-    nav a{
-        display:block;
-        margin:8px 0;
-    }
-}
+<section id="sobre">
 
-// ===== MODO ESCURO =====
-const modo = document.getElementById("modo");
+<div class="card">
+<h2>Sobre a Campanha</h2>
+<p>
+A violência contra a mulher é uma grave violação dos direitos humanos.
+Todos podem contribuir para construir uma sociedade baseada no respeito,
+na igualdade e na proteção das vítimas.
+</p>
+</div>
 
-if (modo) {
-    modo.onclick = function () {
-        document.body.classList.toggle("dark");
-    };
-}
+<div class="card" id="tipos">
+<h2>Tipos de Violência</h2>
 
-// ===== VOLTAR AO TOPO =====
-const topo = document.getElementById("topo");
+<ul>
+<li>Violência Física</li>
+<li>Violência Psicológica</li>
+<li>Violência Moral</li>
+<li>Violência Patrimonial</li>
+<li>Violência Sexual</li>
+</ul>
 
-if (topo) {
-    topo.onclick = function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
-}
+</div>
 
-// ===== FORMULÁRIO =====
-const formulario = document.getElementById("formulario");
+<div class="card" id="ajuda">
+<h2>Como Ajudar</h2>
 
-if (formulario) {
-    formulario.onsubmit = function (e) {
-        e.preventDefault();
+<ul>
+<li>Denuncie situações de violência.</li>
+<li>Ofereça apoio à vítima.</li>
+<li>Não incentive o silêncio.</li>
+<li>Compartilhe informações confiáveis.</li>
+<li>Promova o respeito e a igualdade.</li>
+</ul>
 
-        let texto = document.getElementById("texto").value;
-        let mensagem = document.getElementById("mensagem");
+<a class="botao" href="#">Saiba Mais</a>
 
-        if (texto.trim() == "") {
-            mensagem.innerHTML = "⚠️ Escreva seu desabafo.";
-            mensagem.style.color = "red";
-        } else {
-            mensagem.innerHTML = "💜 Obrigado por compartilhar. Este formulário é apenas uma simulação. Procure um professor, familiar ou outro adulto de confiança se precisar de ajuda.";
-            mensagem.style.color = "green";
-            formulario.reset();
-        }
-    };
-}
+</div>
 
-// ===== QUIZ =====
-function corrigirQuiz() {
+</section>
 
-    let pontos = 0;
+<footer>
+<p>© 2026 - Campanha de Conscientização | Diga Não à Violência Contra a Mulher</p>
+</footer>
 
-    for (let i = 1; i <= 5; i++) {
-        let resposta = document.querySelector(
-            "input[name='q" + i + "']:checked"
-        );
-
-        if (resposta && resposta.value == "1") {
-            pontos++;
-        }
-    }
-
-    document.getElementById("resultado").innerHTML =
-        "Você acertou " + pontos + " de 5 perguntas!";
-}
-
+</body>
+</html>
