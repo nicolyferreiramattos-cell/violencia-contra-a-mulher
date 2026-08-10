@@ -1,151 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Apoio - Respeito e Acolhimento</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
 
-    <div class="accessibility-bar">
-        <button id="btn-contrast"><i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste</button>
-        <button id="btn-font-increase"><i class="fa-solid fa-text-height"></i> Aumentar Fonte A+</button>
-        <button id="btn-font-reset"><i class="fa-solid fa-rotate-left"></i> Fonte Normal A-</button>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Portal de Apoio ao Estudante - Violência contra a Mulher</title>
+    <meta name="description" content="Portal informativo e interativo sobre violência contra a mulher: informações, orientações e apoio para estudantes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  </head>
 
-    <header>
-        <div class="header-container">
-            <h1><i class="fa-solid fa-hand-holding-heart"></i> Portal de Apoio ao Estudante</h1>
-            <p class="subtitle">Conscientização, Respeito e Combate à Violência contra a Mulher</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio"><i class="fa-solid fa-house"></i> Início</a></li>
-                <li><a href="#escuta"><i class="fa-solid fa-comments"></i> Portal de Escuta</a></li>
-                <li><a href="#quiz"><i class="fa-solid fa-circle-question"></i> Quiz</a></li>
-                <li><a href="#referencias"><i class="fa-solid fa-book-bookmark"></i> Referências</a></li>
-            </ul>
-        </nav>
-    </header>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
 
-    <main>
-        <section id="inicio" class="card">
-            <h2><i class="fa-solid fa-heart-pulse"></i> Bem-vindo ao Portal de Apoio ao Estudante</h2>
-            <div class="welcome-box">
-                <p>Aqui você encontrará informações, orientações e apoio sobre situações vivenciadas no ambiente escolar e social. Nosso objetivo é incentivar o respeito, a empatia e o acolhimento dentro da escola, promovendo a igualdade de gênero e combatendo a violência contra a mulher.</p>
-                <blockquote>
-                    "Ninguém deve se sentir sozinha ou com medo. A escola é um espaço seguro de respeito, diálogo e transformação."
-                </blockquote>
-            </div>
-            
-            <div class="info-alert">
-                <h3><i class="fa-solid fa-phone-volume"></i> Precisa de ajuda imediata?</h3>
-                <p>Ligue para o <strong>Ligue 180</strong> (Central de Atendimento à Mulher) ou <strong>190</strong> (Polícia Militar em emergências). A ligação é gratuita e anônima.</p>
-            </div>
-        </section>
-
-        <section id="escuta" class="card">
-            <h2><i class="fa-solid fa-ear-listen"></i> Portal de Escuta</h2>
-            <p>Este espaço é um canal fictício para você expressar seus sentimentos ou desabafar sobre algo que esteja vivenciando.</p>
-            
-            <div class="disclaimer">
-                <i class="fa-solid fa-shield-halved"></i> <strong>Importante:</strong> Este formulário é apenas uma simulação interativa. Nenhuma informação escrita aqui é armazenada ou enviada.
-            </div>
-
-            <form id="form-escuta">
-                <label for="mensagem">Escreva aqui seu desabafo ou pensamento:</label>
-                <textarea id="mensagem" rows="5" placeholder="Sinta-se à vontade para escrever..." required></textarea>
-                <button type="submit" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Enviar Desabafo (Simulação)</button>
-            </form>
-
-            <div id="resposta-acolhimento" class="response-box hidden"></div>
-
-            <div class="guidance-box">
-                <h3><i class="fa-solid fa-user-group"></i> Onde buscar ajuda na vida real?</h3>
-                <p>Se você ou alguém que você conhece está passando por uma situação difícil, procure pessoas de confiança:</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> Professores e pedagogos da sua escola</li>
-                    <li><i class="fa-solid fa-check"></i> Direção e equipe de orientação educacional</li>
-                    <li><i class="fa-solid fa-check"></i> Família ou responsáveis legais</li>
-                    <li><i class="fa-solid fa-check"></i> Conselho Tutelar da sua região</li>
-                    <li><i class="fa-solid fa-check"></i> Disque 180 (Central de Atendimento à Mulher)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="quiz" class="card">
-            <h2><i class="fa-solid fa-list-check"></i> Quiz Interativo: Conscientização e Respeito</h2>
-            <p>Responda às 5 perguntas abaixo para testar seus conhecimentos sobre respeito, igualdade e combate à violência contra a mulher.</p>
-
-            <form id="quiz-form">
-                <div class="quiz-question">
-                    <p><strong>1. Fazer piadas ofensivas ou comentários constrangedores sobre colegas no ambiente escolar é considerado:</strong></p>
-                    <label><input type="radio" name="p1" value="0"> Uma brincadeira saudável entre estudantes.</label><br>
-                    <label><input type="radio" name="p1" value="1"> Uma forma de desrespeito ou assédio/bullying que deve ser evitada.</label>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>2. O que fazer ao presenciar uma situação de desrespeito ou violência contra uma colega?</strong></p>
-                    <label><input type="radio" name="p2" value="1"> Informar um adulto de confiança na escola (professor, pedagogo ou direção).</label><br>
-                    <label><input type="radio" name="p2" value="0"> Ignorar e fingir que nada aconteceu.</label>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>3. O que garante a Lei Maria da Penha (Lei nº 11.340/2006)?</strong></p>
-                    <label><input type="radio" name="p3" value="1"> Mecanismos para coibir, prevenir e punir a violência doméstica e familiar contra a mulher.</label><br>
-                    <label><input type="radio" name="p3" value="0"> Regras para uso de redes sociais na escola.</label>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>4. Exigir senhas de redes sociais e controlar com quem a parceira conversa é uma atitude de:</strong></p>
-                    <label><input type="radio" name="p4" value="0"> Demonstração de carinho e proteção.</label><br>
-                    <label><input type="radio" name="p4" value="1"> Comportamento abusivo e controle desnecessário.</label>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>5. Qual o número de telefone gratuito para denúncias e orientações de apoio à mulher no Brasil?</strong></p>
-                    <label><input type="radio" name="p5" value="1"> Ligue 180</label><br>
-                    <label><input type="radio" name="p5" value="0"> Ligue 100</label>
-                </div>
-
-                <button type="button" id="btn-submit-quiz" class="btn-primary"><i class="fa-solid fa-check"></i> Finalizar Quiz</button>
-            </form>
-
-            <div id="resultado-quiz" class="result-box hidden"></div>
-        </section>
-
-        <section id="referencias" class="card">
-            <h2><i class="fa-solid fa-book"></i> Referências e Fontes Confiáveis</h2>
-            <p>Todas as informações deste portal foram baseadas em fontes institucionais e oficiais:</p>
-            <ul class="ref-list">
-                <li>
-                    <i class="fa-solid fa-link"></i> 
-                    <a href="https://www.gov.br/mulheres/pt-br" target="_blank" rel="noopener">Ministério das Mulheres - Governo Federal</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-link"></i> 
-                    <a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank" rel="noopener">Lei Maria da Penha (Lei nº 11.340/2006)</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-link"></i> 
-                    <a href="https://www.unicef.org/brazil/" target="_blank" rel="noopener">UNICEF Brasil - Direitos das Crianças e Adolescentes</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-link"></i> 
-                    <a href="https://www.gov.br/mdh/pt-br/assuntos/denuncie-violencia-contra-a-mulher" target="_blank" rel="noopener">Central de Atendimento à Mulher - Ligue 180</a>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <button id="btn-back-to-top" title="Voltar ao Topo"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <footer>
-        <p>Portal de Apoio ao Estudante &copy; 2026 - Desenvolvido para fins educativos.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
 </html>
